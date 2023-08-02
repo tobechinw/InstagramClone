@@ -38,14 +38,13 @@ function LogInScreen(props) {
                 <AppFormField 
                     autoCapitalize="none" 
                     autoCorrect={false} 
-                    // icon="lock" 
                     keyboardAppearance='dark' 
                     name={"password"} 
                     placeholder="Password" 
                     secureTextEntry={true} 
                     style={styles.formField}
                 />
-                {/* <SubmitButton title="Login" /> */}
+                <SubmitButton title="Log in" />
             </AppForm>
             
         </Screen>

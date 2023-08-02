@@ -59,7 +59,7 @@ function LogInScreen(props) {
                     secureTextEntry={true} 
                     style={styles.formField}
                 />
-                <SubmitButton style={styles.formField} title="Login" />
+                <SubmitButton style={styles.formField} title="Register" />
             </AppForm>
         </Screen>
     );
