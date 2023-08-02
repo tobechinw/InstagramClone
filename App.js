@@ -13,6 +13,7 @@ import Screen from './app/components/Screen';
 import AppTextInput from './app/components/AppTextInput';
 import AppFormField from './app/components/forms/AppFormField';
 import AppForm from './app/components/forms/AppForm';
+import RegisterScreen from './app/screens/RegisterScreen'
 
 const users = [
   {id: '0gb0nnee', location: 'Ottawa, ON'},
@@ -24,7 +25,7 @@ const users = [
  
 export default function App() {
   return (
-    <HomeScreen />
+    <RegisterScreen />
   );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import colors from '../config/colors';
 
 function AppButton({title, onPress, style}) {
     return (
@@ -11,21 +12,18 @@ function AppButton({title, onPress, style}) {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#405DE6',
-        width: "50%",
+        width: "100%",
         borderRadius: 10,
-        marginTop: 10, 
         justifyContent: 'center',
         alignItems: 'center',
         padding: 15,
-        width: "95%",
         marginVertical: 10,
+        marginTop: 20
     },
     title: {
-        color: 'white',
-        width: '90%',
-        borderRadius: 15,
-        fontSize: 20,
+        fontSize: 15,
         textAlign: 'center',
+        color: colors.white
     }
 })
 export default AppButton;

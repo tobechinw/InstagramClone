@@ -13,7 +13,7 @@ const initialUsers = [
     {id: 'joyceokakoso', location: 'Port Harcourt, Nigeria'},
     {id: 'christabel_og', location: 'Toronto, ON'},
     {id: 'ebube_nw', location: 'Hamilton, ON'},
-  ]
+]
 
 
 
