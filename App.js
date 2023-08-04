@@ -39,9 +39,9 @@ export default function App() {
     // <UserScreen />
     // <RegisterScreen/>
     // <LogInScreen/>
-    <HomeScreen/>
+    // <HomeScreen/>
     // <SearchScreen/>
-    // <ProfileScreen/>
+    <ProfileScreen/>
   );
 }
 
