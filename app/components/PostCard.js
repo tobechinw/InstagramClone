@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: Dimensions.get('window').height / 2
+        height: Dimensions.get('window').height / 1.6
     },
     postActions: {
         flexDirection: 'row',
