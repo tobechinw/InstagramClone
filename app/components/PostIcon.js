@@ -3,10 +3,10 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from '../config/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-function PostIcon({ style, username, location }) {
+function PostIcon({ location, source, style, username }) {
     return (
         <View style={styles.container}>
-           <Image source={require('../assets/pfp.jpg')} style={[styles.image, style]} />
+           <Image source={source} style={[styles.image, style]} />
            <View style={styles.textContainer}>
                 <Text style={styles.title}>{username}</Text>
                 { location && <Text style={styles.subtitle}>{location}</Text> }
@@ -17,6 +17,7 @@ function PostIcon({ style, username, location }) {
         </View>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',

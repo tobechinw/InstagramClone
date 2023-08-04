@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, useColorScheme } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Screen from '../components/Screen';
 import * as Yup from 'yup'
 
@@ -60,14 +60,6 @@ const styles = StyleSheet.create({
         width: '100%',
         textAlign: 'center'
     }
-    // },
-    // logo: {
-    //     width: 80,
-    //     height: 80,
-    //     alignSelf: 'center',
-    //     marginTop: 50,
-    //     marginBottom: 50
-    // }
 })
 
 export default LogInScreen;

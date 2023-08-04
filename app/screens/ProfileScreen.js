@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Screen from '../components/Screen';
 import UserScreen from './UserScreen';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import colors from '../config/colors';

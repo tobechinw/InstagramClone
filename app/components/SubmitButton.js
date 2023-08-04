@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import AppButton from './AppButton';
 
 function SubmitButton({ title }) {

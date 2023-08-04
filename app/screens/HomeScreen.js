@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, SafeAreaView, FlatList, RefreshControl, ScrollView } from 'react-native';
+import { StyleSheet, FlatList, RefreshControl } from 'react-native';
 import AppHeader from '../components/AppHeader';
-import ProfileIcon from '../components/ProfileIcon';
 import ListItemSeparator from '../components/ListItemSeparator';
 import PostCard from '../components/PostCard';
 import colors from '../config/colors';
 import Screen from '../components/Screen';
+import StoryList from '../components/StoryList';
 
 
 const initialUsers = [
@@ -18,7 +18,7 @@ const initialUsers = [
 
 
 
-function HomeScreen(props) {
+function HomeScreen() {
 
     const [refreshing, setRefreshing] = useState(false)
     const [users, setUsers] = useState(initialUsers)
@@ -36,16 +36,7 @@ function HomeScreen(props) {
     return (
         <Screen style={{ padding: 10 }}>
           <AppHeader/>
-          <View>
-            <FlatList
-                horizontal
-                data={users} 
-                keyExtractor={user => user.id.toString()}
-                renderItem={( {item} ) => 
-                  <ProfileIcon source={item.image}/>
-                } 
-            />
-          </View>
+          <StoryList users={users} />
           <FlatList 
               data={users} 
               keyExtractor={user => user.id.toString()} 
@@ -58,7 +49,7 @@ function HomeScreen(props) {
                 <RefreshControl
                     refreshing={refreshing}
                     onRefresh={onRefresh}
-                    tintColor={colors.white} // Change this color to the desired color
+                    tintColor={colors.white}
                 />
               }
           />

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Image, StyleSheet, Dimensions, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import colors from '../config/colors';
-import Constants from 'expo-constants'
 
-function SearchImage({ style, source }) {
+function SearchImage({ source }) {
     return (
         <TouchableOpacity activeOpacity={0.7}>
             <Image source={source} style={styles.image} />

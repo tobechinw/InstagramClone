@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import Screen from '../components/Screen';
-import ProfileHeader from '../components/ProfileHeader';
 import ListItemSeparator from '../components/ListItemSeparator';
 import ProfileStats from '../components/ProfileStats';
 

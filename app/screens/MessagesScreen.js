@@ -131,8 +131,4 @@ function MessagesScreen(props) {
     );
 }
 
-const styles = StyleSheet.create({
-    container: {}
-})
-
 export default MessagesScreen;

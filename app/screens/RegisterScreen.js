@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, useColorScheme } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Screen from '../components/Screen';
 import * as Yup from 'yup'
 

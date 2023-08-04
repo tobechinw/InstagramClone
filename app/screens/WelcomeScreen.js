@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text, SafeAreaView, StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import WelcomeText from '../components/WelcomeText';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
 
-function WelcomeScreen(props) {
+function WelcomeScreen() {
     return (
         <Screen style={styles.container}>
            <MaterialCommunityIcons color='white' name='instagram' size={100} />
@@ -15,6 +15,7 @@ function WelcomeScreen(props) {
         </Screen>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
         padding: 10,
@@ -30,4 +31,5 @@ const styles = StyleSheet.create({
         fontFamily: 'Avenir'
     }
 })
+
 export default WelcomeScreen;

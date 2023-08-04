@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Image, StyleSheet, View, Dimensions, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, View, Dimensions, Vibration, TouchableOpacity } from 'react-native';
 import PostIcon from './PostIcon';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import colors from '../config/colors';
-import AppText from './AppText';
 import PostText from './PostText';
 
 function PostCard({ caption, location, source, username,  }) {
@@ -13,7 +12,7 @@ function PostCard({ caption, location, source, username,  }) {
 
     return (
         <View style={styles.container}>
-           <PostIcon username={username} location={location} />
+           <PostIcon source={source} username={username} location={location} />
            <Image source={source} style={styles.image}  />
            <View style={styles.postActions}>
                 <TouchableOpacity>
@@ -35,6 +34,7 @@ function PostCard({ caption, location, source, username,  }) {
         </View>
     );
 }
+
 const styles = StyleSheet.create({
     bookmarkIcon:{
         marginLeft: 'auto'
@@ -44,9 +44,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginTop: 10
     },
-    icon: {
-        width: '100%',
-    },
     image: {
         width: '100%',
         height: Dimensions.get('window').height / 1.6
@@ -55,12 +52,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 10
     },
-    postTitle: {
-        flexDirection: 'row'
-    },
     sendContainer: {
         transform: [{ rotate: '-45deg' }],
         marginLeft: 5
     }
 })
+
 export default PostCard;

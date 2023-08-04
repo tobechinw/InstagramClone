@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         marginLeft: 90
     },
     centerContainer: {
-        // flex: 1,
         width: '33%',
         alignItems: 'center',
         fontWeight: 'bold'

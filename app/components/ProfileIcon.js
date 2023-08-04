@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-function ProfileIcon({ image, source, style }) {
+function ProfileIcon({ source, style }) {
     return (
         <TouchableOpacity style={styles.container}>
            <Image source={source} style={[styles.image, style]} />

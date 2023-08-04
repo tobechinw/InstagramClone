@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import colors from '../config/colors';
 import AppTextInput from './AppTextInput';
 
-function SearchBar(props) {
+function SearchBar() {
     return (
         <AppTextInput icon={'magnify'} placeholder='Search' style={styles.searchBar} />
     );

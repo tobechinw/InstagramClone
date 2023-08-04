@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, Image, StyleSheet, RefreshControl } from 'react-native';
+import { FlatList, RefreshControl } from 'react-native';
 import Screen from '../components/Screen';
 import SearchBar from '../components/SearchBar';
 import colors from '../config/colors';
@@ -81,9 +81,5 @@ function SearchScreen(props) {
         </Screen>
     );
 }
-
-const styles = StyleSheet.create({
-    image: {}
-})
 
 export default SearchScreen;
