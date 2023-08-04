@@ -5,6 +5,7 @@ import ProfileIcon from '../components/ProfileIcon';
 import ListItemSeparator from '../components/ListItemSeparator';
 import PostCard from '../components/PostCard';
 import colors from '../config/colors';
+import Screen from '../components/Screen';
 
 
 const initialUsers = [
@@ -32,7 +33,7 @@ function HomeScreen(props) {
     }
 
     return (
-        <SafeAreaView style={styles.test}>
+        <Screen style={{ padding: 10 }}>
           <AppHeader/>
           <View>
             <FlatList
@@ -62,7 +63,7 @@ function HomeScreen(props) {
                 />
               }
           />
-        </SafeAreaView>
+        </Screen>
     );
 }
 

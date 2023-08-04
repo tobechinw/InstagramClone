@@ -21,6 +21,7 @@ import SearchBar from './app/components/SearchBar';
 import SearchScreen from './app/screens/SearchScreen';
 import ProfileHeader from './app/components/ProfileHeader';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+import ProfileScreen from './app/screens/ProfileScreen';
 
 
 const users = [
@@ -35,6 +36,10 @@ export default function App() {
   return (
     <WelcomeScreen />
     // <RegisterScreen/>
+    // <LogInScreen/>
+    // <HomeScreen/>
+    // <SearchScreen/>
+    // <ProfileScreen/>
   );
 }
 
