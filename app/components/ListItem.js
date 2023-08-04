@@ -6,7 +6,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 function ListItem({ onPress, title, subtitle, image, rightImage }) {
     return (
-        <TouchableHighlight onPress={onPress}>
+        <TouchableHighlight underlayColor={colors.medium} onPress={onPress}>
             <View style={styles.container}>
                 { image && <Image style={styles.image} source={image} /> }
                 <View style={styles.detailsContainer}>

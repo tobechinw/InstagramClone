@@ -1,6 +1,7 @@
 import React from 'react';
-import { Image, StyleSheet, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
+import { Image, StyleSheet, Dimensions, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import colors from '../config/colors';
+import Constants from 'expo-constants'
 
 function SearchImage({ style, source }) {
     return (
@@ -13,8 +14,8 @@ function SearchImage({ style, source }) {
 const styles = StyleSheet.create({
     container: {},
     image: {
-        width: 130,
-        height: 130,
+        width: Dimensions.get('window').width / 3,
+        height: Dimensions.get('window').width / 3,
         borderColor: colors.black,
         borderWidth: 0.3
     }

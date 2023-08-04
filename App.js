@@ -34,10 +34,12 @@ const users = [
  
 export default function App() {
   return (
-    <WelcomeScreen />
+    // <WelcomeScreen />
+    // <MessagesScreen />
+    // <UserScreen />
     // <RegisterScreen/>
     // <LogInScreen/>
-    // <HomeScreen/>
+    <HomeScreen/>
     // <SearchScreen/>
     // <ProfileScreen/>
   );

@@ -108,8 +108,7 @@ function MessagesScreen(props) {
             <AppHeader />
             <FlatList
                 data={messages}
-                keyExtractor={message => message.id.toString()}
-                ItemSeparatorComponent={ListItemSeparator}
+                keyExtractor={message => message.id.toString()}   
                 renderItem={({ item }) =>
                     <ListItem 
                         image={ item.image }
@@ -119,6 +118,7 @@ function MessagesScreen(props) {
                         rightImage={'camera'}
                     />
                 }   
+                ItemSeparatorComponent={ListItemSeparator}
                 refreshControl={
                     <RefreshControl
                         refreshing={refreshing}

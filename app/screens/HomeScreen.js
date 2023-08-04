@@ -37,7 +37,6 @@ function HomeScreen(props) {
           <AppHeader/>
           <View>
             <FlatList
-                style={{ flexDirection: 'row' }}
                 horizontal
                 data={users} 
                 keyExtractor={user => user.id.toString()}

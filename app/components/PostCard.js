@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View, Dimensions } from 'react-native';
 import PostIcon from './PostIcon';
 
 function PostCard({ username, location }) {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: 350
+        height: Dimensions.get('window').height / 2
     }
 })
 export default PostCard;

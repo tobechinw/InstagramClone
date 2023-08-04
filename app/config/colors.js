@@ -7,5 +7,6 @@ export default {
     light: "#f8f4f4",
     danger: "red",
     dark: "#0c0c0c",
-    test: '#F9F9F9'
+    test: '#F9F9F9',
+    underlay: '#969191'
 }
