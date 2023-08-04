@@ -9,11 +9,11 @@ import Screen from '../components/Screen';
 
 
 const initialUsers = [
-    {id: '0gb0nnee', location: 'Ottawa, ON', image: require('../assets/pfp.jpg')},
-    {id: 't0bechi', location: 'Ottawa, ON', image: require('../assets/pfp.jpg')},
-    {id: 'joyceokakoso', location: 'Port Harcourt, Nigeria', image: require('../assets/pfp.jpg')},
-    {id: 'christabel_og', location: 'Toronto, ON', image: require('../assets/pfp.jpg')},
-    {id: 'ebube_nw', location: 'Hamilton, ON', image: require('../assets/pfp.jpg')},
+    {id: '0gb0nnee', image: require('../assets/pfp.jpg'), caption: '❤️'},
+    {id: 't0bechi', image: require('../assets/model1.jpeg'), caption: 'Hm'},
+    {id: 'fdjhsdfh', location: 'Port Harcourt, Nigeria', image: require('../assets/model2.jpeg'), caption: 'iskj'},
+    {id: 'chinedu_nw', location: 'Toronto, ON', image: require('../assets/model13.jpeg'), caption: 'yukef'},
+    {id: 'ebube_nw', location: 'Hamilton, ON', image: require('../assets/model4.jpeg'), caption: 'tyudsjh'},
 ]
 
 
@@ -25,10 +25,11 @@ function HomeScreen(props) {
 
     const onRefresh = () => {
       setUsers([
-          {id: '0gb0nnee', location: 'Ottawa, ON'},
-          {id: 't0bechi', location: 'Ottawa, ON'},
-          {id: 'joyceokakoso', location: 'Port Harcourt, Nigeria'},
-          {id: 'ebube_nw', location: 'Hamilton, ON'},
+        {id: '0gb0nnee', image: require('../assets/pfp.jpg'), caption: 'Life is good'},
+        {id: 't0bechi', image: require('../assets/model5.jpeg'), caption: 'Work'},
+        {id: 'fdjhsdfh', location: 'Port Harcourt, Nigeria', image: require('../assets/model11.jpeg'), caption: 'The Fall Off'},
+        {id: 'chinedu_nw', location: 'Toronto, ON', image: require('../assets/model13.jpeg'), caption: 'The Off-Season'},
+        {id: 'ebube_nw', location: 'Hamilton, ON', image: require('../assets/model8.jpeg'), caption: 'Born Sinner'},
       ])
     }
 
@@ -40,20 +41,19 @@ function HomeScreen(props) {
                 horizontal
                 data={users} 
                 keyExtractor={user => user.id.toString()}
-                renderItem={() => 
-                  <ProfileIcon/>
+                renderItem={( {item} ) => 
+                  <ProfileIcon source={item.image}/>
                 } 
             />
           </View>
-          <ScrollView horizontal style={styles.profileContainer}>
-          </ScrollView>
           <FlatList 
               data={users} 
               keyExtractor={user => user.id.toString()} 
               ItemSeparatorComponent={ListItemSeparator} 
               refreshing={refreshing} 
-              renderItem={({ item }) => 
-                <PostCard username={item.id} location={item.location}/>} 
+              renderItem={({ item }) =>
+                <PostCard source={item.image} username={item.id} location={item.location} caption={item.caption}/>
+              }
               refreshControl={
                 <RefreshControl
                     refreshing={refreshing}

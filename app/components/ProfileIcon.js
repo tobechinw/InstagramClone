@@ -1,13 +1,14 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-function ProfileIcon({ style, image }) {
+function ProfileIcon({ image, source, style }) {
     return (
-        <View style={styles.container}>
-           <Image source={require('../assets/pfp.jpg')} style={[styles.image, style]} />
-        </View>
+        <TouchableOpacity style={styles.container}>
+           <Image source={source} style={[styles.image, style]} />
+        </TouchableOpacity>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
         marginBottom: 20,
@@ -20,4 +21,5 @@ const styles = StyleSheet.create({
         marginRight: 10
     }
 })
+
 export default ProfileIcon;
