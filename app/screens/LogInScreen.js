@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import { AppFormField, AppForm } from '../components/forms'
 import colors from '../config/colors';
 import AppHeader from '../components/AppHeader';
+import SubmitButton from '../components/SubmitButton';
 
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
@@ -23,17 +24,15 @@ function LogInScreen(props) {
                 onSubmit={values => console.log(values)}
                 validationSchema={validationSchema}
             >
-                <AppFormField 
-                     
+                <AppFormField            
                     autoCapitalize="none" 
                     autoCorrect={false} 
-                    // icon="email" 
                     keyboardType="email-address" 
                     keyboardAppearance='dark' 
                     name={"email"}
                     placeholder="Email" 
                     style={styles.formField}
-                    textContentType="emailAddress" 
+                    textContentType="emailAddress"
                 />
                 <AppFormField 
                     autoCapitalize="none" 
@@ -54,21 +53,21 @@ function LogInScreen(props) {
 const styles = StyleSheet.create({
     container: {
         padding: 20,
-        backgroundColor: colors.black,
         justifyContent: 'center',
     },
     formField: {
         color: colors.white,
         width: '100%',
         textAlign: 'center'
-    },
-    logo: {
-        width: 80,
-        height: 80,
-        alignSelf: 'center',
-        marginTop: 50,
-        marginBottom: 50
     }
+    // },
+    // logo: {
+    //     width: 80,
+    //     height: 80,
+    //     alignSelf: 'center',
+    //     marginTop: 50,
+    //     marginBottom: 50
+    // }
 })
 
 export default LogInScreen;

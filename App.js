@@ -14,6 +14,14 @@ import AppTextInput from './app/components/AppTextInput';
 import AppFormField from './app/components/forms/AppFormField';
 import AppForm from './app/components/forms/AppForm';
 import RegisterScreen from './app/screens/RegisterScreen'
+import UserScreen from './app/screens/UserScreen';
+import MessagesScreen from './app/screens/MessagesScreen';
+import ListItem from './app/components/ListItem';
+import SearchBar from './app/components/SearchBar';
+import SearchScreen from './app/screens/SearchScreen';
+import ProfileHeader from './app/components/ProfileHeader';
+import { MaterialCommunityIcons } from '@expo/vector-icons'
+
 
 const users = [
   {id: '0gb0nnee', location: 'Ottawa, ON'},
@@ -25,7 +33,7 @@ const users = [
  
 export default function App() {
   return (
-    <RegisterScreen />
+    <SearchScreen/>
   );
 }
 
@@ -35,6 +43,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  icon: {
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   test: {
     flex: 1,

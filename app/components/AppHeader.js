@@ -6,8 +6,8 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 function AppHeader(props) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity>
-                <Text style={styles.headerText}>Instagram</Text>
+            <TouchableOpacity style={{ paddingLeft: 10 }}>
+                <MaterialCommunityIcons name='instagram' size={35} color={colors.white} />
             </TouchableOpacity>
            <View style={styles.iconContainer}>
                 <TouchableOpacity>
@@ -25,17 +25,18 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         marginBottom: 20,
     },
-    headerText: {
-        fontSize: 30,
-        color: colors.white,
-    },
+    // headerText: {
+    //     fontSize: 30,
+    //     color: colors.white,
+    // },
     icon: {
         marginLeft: 15
     },
     iconContainer: {
         flexDirection: 'row',
         flex: 1,
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        paddingRight: 10
     }
 })
 export default AppHeader;

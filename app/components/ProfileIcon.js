@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 
-function ProfileIcon({ style }) {
+function ProfileIcon({ style, image }) {
     return (
         <View style={styles.container}>
            <Image source={require('../assets/pfp.jpg')} style={[styles.image, style]} />
@@ -10,12 +10,13 @@ function ProfileIcon({ style }) {
 }
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 20
+        marginBottom: 20,
+        flexDirection: 'row'
     },
     image: {
         height: 70,
         width: 70,
-        borderRadius: 50,
+        borderRadius: 35,
         marginRight: 10
     }
 })

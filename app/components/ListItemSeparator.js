@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
     separator: {
         width: "100%",
         height: 0.2,
-        backgroundColor: colors.medium
+        backgroundColor: '#333333',
+        marginBottom: 5
     }
 })
 

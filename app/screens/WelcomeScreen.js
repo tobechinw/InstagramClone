@@ -9,8 +9,8 @@ function WelcomeScreen(props) {
         <SafeAreaView style={styles.container}>
            <MaterialCommunityIcons color='white' name='instagram' size={100} />
            <WelcomeText name={"Instagram"} style={styles.text} />
-           <AppButton style={styles.login} title={"Login"} onPress={() => console.log('Login button tapped')} />
-           <AppButton style={styles.signup} title={"Sign Up"} onPress={() => console.log('Sign Up button tapped')} />
+            <AppButton style={styles.login} title={"Login"} onPress={() => console.log('Login button tapped')} />
+            <AppButton style={styles.signup} title={"Sign Up"} onPress={() => console.log('Sign Up button tapped')} />   
         </SafeAreaView>
     );
 }
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'black',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     text: {
         color: 'white',

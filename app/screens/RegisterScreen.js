@@ -26,10 +26,8 @@ function LogInScreen(props) {
                 validationSchema={validationSchema}
             >
                 <AppFormField 
-                    
                     autoCapitalize="none" 
                     autoCorrect={false} 
-                    // icon="email" 
                     keyboardType="email-address" 
                     keyboardAppearance='dark' 
                     name={"email"}
@@ -38,21 +36,16 @@ function LogInScreen(props) {
                     textContentType="emailAddress" 
                 />
                 <AppFormField 
-                    
                     autoCapitalize="none" 
                     autoCorrect={false} 
-                    //  icon="account" 
-                    //  keyboardType="email-address" 
                     keyboardAppearance='dark' 
                     name={"username"}
                     placeholder="Username" 
                     style={styles.formField}
-                    //  textContentType="emailAddress" 
                 />
                 <AppFormField 
                     autoCapitalize="none" 
                     autoCorrect={false} 
-                    // icon="lock" 
                     keyboardAppearance='dark' 
                     name={"password"} 
                     placeholder="Password" 
@@ -68,7 +61,6 @@ function LogInScreen(props) {
 const styles = StyleSheet.create({
     container: {
         padding: 20,
-        backgroundColor: colors.black,
         justifyContent: 'center',
     },
     formField: {
