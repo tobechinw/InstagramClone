@@ -61,7 +61,7 @@ function SearchScreen(props) {
     }
 
     return (
-        <Screen>
+        <Screen style={{ padding: 10 }}>
             <SearchBar />
             <FlatList 
                 data={images}
@@ -83,10 +83,7 @@ function SearchScreen(props) {
 }
 
 const styles = StyleSheet.create({
-    image: {
-        width: 130,
-        height: 130
-    }
+    image: {}
 })
 
 export default SearchScreen;

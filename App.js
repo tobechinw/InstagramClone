@@ -33,7 +33,8 @@ const users = [
  
 export default function App() {
   return (
-    <SearchScreen/>
+    <WelcomeScreen />
+    // <RegisterScreen/>
   );
 }
 
