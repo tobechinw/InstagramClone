@@ -10,7 +10,7 @@ import SubmitButton from '../components/SubmitButton';
 
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
-    username: Yup.string().required().min(5, "Username must be at least 5 characters long"),
+    username: Yup.string().required().min(5, "Username must be at least 5 characters long").label("Username"),
     password: Yup.string().required().min(4).label("Password"),
 })
 

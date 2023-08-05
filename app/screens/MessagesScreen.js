@@ -118,7 +118,6 @@ function MessagesScreen(props) {
                         rightImage={'camera'}
                     />
                 }   
-                ItemSeparatorComponent={ListItemSeparator}
                 refreshControl={
                     <RefreshControl
                         refreshing={refreshing}

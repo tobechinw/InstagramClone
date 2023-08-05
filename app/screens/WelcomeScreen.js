@@ -26,9 +26,8 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontWeight: 'bold', 
         fontSize: 30,
-        fontFamily: 'Avenir'
+        fontFamily: 'System'
     }
 })
 

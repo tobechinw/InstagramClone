@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 15,
         textAlign: 'center',
-        color: colors.white
+        color: colors.white,
     }
 })
 export default AppButton;

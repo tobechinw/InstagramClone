@@ -23,14 +23,11 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     title: {
-        fontFamily: 'Avenir',
-        fontWeight: 'bold',
         color: colors.white,
         textAlign: 'center',
         fontSize: 20
     },
     subtitle: {
-        fontFamily: 'Avenir',
         color: colors.white,
         fontSize: 16
     },

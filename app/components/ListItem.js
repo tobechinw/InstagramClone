@@ -25,7 +25,7 @@ function ListItem({ onPress, title, subtitle, image, rightImage }) {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        padding: 15,
+        padding: 10,
         alignItems: 'center'
     },
     detailsContainer: {
@@ -42,12 +42,14 @@ const styles = StyleSheet.create({
         paddingLeft: 15
     },
     subtitle: {
-        fontSize: 16,
-        fontWeight: '600'
+        fontSize: 15,
+        fontFamily: 'System',
+        color: colors.medium
     },
     title: {
-        fontWeight: 'bold',
-        fontSize: 16
+        // fontWeight: '600',
+        fontSize: 15,
+        fontFamily: 'System'
     }
 })
 

@@ -11,7 +11,7 @@ function ErrorMessage({ error, visible }) {
 const styles = StyleSheet.create({
     error: {
         color: 'red',
-        fontFamily: 'Avenir',
+        fontFamily: 'System',
         fontSize: 15
     }
 })

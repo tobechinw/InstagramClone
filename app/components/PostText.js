@@ -13,15 +13,11 @@ function PostText({username, caption, style}) {
 
 const styles = StyleSheet.create({
     caption: {
-        fontWeight: '500',
         marginLeft: 10
     },
     container: {
         marginTop: 5,
         flexDirection: 'row'
-    },
-    username: {
-        fontWeight: 'bold'
     }
 })
 
