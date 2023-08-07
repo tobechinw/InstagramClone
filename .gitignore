@@ -36,3 +36,7 @@ yarn-error.*
 
 # assets
 app/assets
+
+# prettier config
+.prettierignore
+.prettierrc.json

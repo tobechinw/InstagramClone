@@ -1,23 +1,30 @@
 import React from 'react';
-import { Image, StyleSheet, Dimensions, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
+import {
+	Image,
+	StyleSheet,
+	Dimensions,
+	TouchableOpacity,
+	TouchableWithoutFeedback,
+	View,
+} from 'react-native';
 import colors from '../config/colors';
 
 function SearchImage({ source, onPress }) {
-    return (
-        <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
-            <Image source={source} style={styles.image} />
-        </TouchableOpacity>
-    );
+	return (
+		<TouchableOpacity onPress={onPress} activeOpacity={0.7}>
+			<Image source={source} style={styles.image} />
+		</TouchableOpacity>
+	);
 }
 
 const styles = StyleSheet.create({
-    container: {},
-    image: {
-        width: Dimensions.get('window').width / 3,
-        height: Dimensions.get('window').width / 3,
-        borderColor: colors.black,
-        borderWidth: 0.3
-    }
-})
+	container: {},
+	image: {
+		width: Dimensions.get('window').width / 3,
+		height: Dimensions.get('window').width / 3,
+		borderColor: colors.black,
+		borderWidth: 0.3,
+	},
+});
 
 export default SearchImage;
