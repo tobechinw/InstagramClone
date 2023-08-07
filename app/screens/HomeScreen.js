@@ -18,7 +18,7 @@ const initialUsers = [
 
 
 
-function HomeScreen() {
+function HomeScreen( {navigation} ) {
 
     const [refreshing, setRefreshing] = useState(false)
     const [users, setUsers] = useState(initialUsers)
@@ -35,7 +35,7 @@ function HomeScreen() {
 
     return (
         <Screen style={{ padding: 10 }}>
-          <AppHeader/>
+          <AppHeader onPress={ () => navigation.navigate("MessagesScreen") } />
           <StoryList users={users} />
           <FlatList 
               data={users} 
@@ -43,7 +43,7 @@ function HomeScreen() {
               ItemSeparatorComponent={ListItemSeparator} 
               refreshing={refreshing} 
               renderItem={({ item }) =>
-                <PostCard source={item.image} username={item.id} location={item.location} caption={item.caption}/>
+                <PostCard onPress={() => navigation.navigate('UserScreen')} source={item.image} username={item.id} location={item.location} caption={item.caption}/>
               }
               refreshControl={
                 <RefreshControl

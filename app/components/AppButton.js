@@ -9,9 +9,10 @@ function AppButton({title, onPress, style}) {
         </TouchableOpacity>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#4c68d7',
+        backgroundColor: colors.blue,
         width: "100%",
         borderRadius: 10,
         justifyContent: 'center',
@@ -26,4 +27,5 @@ const styles = StyleSheet.create({
         color: colors.white,
     }
 })
+
 export default AppButton;

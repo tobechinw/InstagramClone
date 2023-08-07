@@ -5,14 +5,14 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import colors from '../config/colors';
 import PostText from './PostText';
 
-function PostCard({ caption, location, source, username,  }) {
+function PostCard ({ caption, location, source, username, onPress }) {
 
     const [ liked, setLiked ] = useState(false)
     const [ saved, setSaved ] = useState(false)
 
     return (
         <View style={styles.container}>
-           <PostIcon source={source} username={username} location={location} />
+           <PostIcon onPress={onPress} source={source} username={username} location={location} />
            <Image source={source} style={styles.image}  />
            <View style={styles.postActions}>
                 <TouchableOpacity>

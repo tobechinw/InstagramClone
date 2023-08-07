@@ -8,5 +8,6 @@ export default {
     danger: "red",
     dark: "#0c0c0c",
     test: '#F9F9F9',
-    underlay: '#969191'
+    underlay: '#969191',
+    blue: '#4c68d7'
 }

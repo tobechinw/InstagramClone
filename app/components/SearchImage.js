@@ -2,9 +2,9 @@ import React from 'react';
 import { Image, StyleSheet, Dimensions, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import colors from '../config/colors';
 
-function SearchImage({ source }) {
+function SearchImage({ source, onPress }) {
     return (
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
             <Image source={source} style={styles.image} />
         </TouchableOpacity>
     );

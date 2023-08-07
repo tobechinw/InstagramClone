@@ -7,7 +7,9 @@ function SubmitButton({ title }) {
         <AppButton title={title} />
     );
 }
+
 const styles = StyleSheet.create({
     container: {}
 })
+
 export default SubmitButton;

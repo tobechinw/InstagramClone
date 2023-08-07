@@ -52,7 +52,7 @@ const images = [
     {id: 43, image: require('../assets/model13.jpeg')},
 ]
 
-function SearchScreen(props) {
+function SearchScreen({navigation}) {
 
     const [refreshing, setRefreshing] = useState(false)
 
@@ -68,7 +68,7 @@ function SearchScreen(props) {
                 keyExtractor={image => image.id.toString()}
                 numColumns={3}
                 renderItem={({ item }) => 
-                    <SearchImage source={ item.image }/>
+                    <SearchImage onPress={() => navigation.navigate('PostScreen')} source={ item.image }/>
                 }
                 refreshControl={
                     <RefreshControl

@@ -1,20 +1,22 @@
 import React from 'react';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import colors from '../config/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-function PostIcon({ location, source, style, username }) {
+function PostIcon({ location, source, style, username, onPress }) {
     return (
-        <View style={styles.container}>
-           <Image source={source} style={[styles.image, style]} />
-           <View style={styles.textContainer}>
-                <Text style={styles.title}>{username}</Text>
-                { location && <Text style={styles.subtitle}>{location}</Text> }
-           </View>
-           <TouchableOpacity style={styles.dotContainer}>
-                <MaterialCommunityIcons name='dots-horizontal' size={25} color={colors.white} />
-           </TouchableOpacity>
-        </View>
+        <TouchableWithoutFeedback onPress={(onPress)} >
+            <View style={styles.container}>
+                <Image source={source} style={[styles.image, style]} />
+                <View style={styles.textContainer}>
+                        <Text  style={styles.title}>{username}</Text>
+                        { location && <Text style={styles.subtitle}>{location}</Text> }
+                </View>
+                <TouchableOpacity style={styles.dotContainer}>
+                        <MaterialCommunityIcons name='dots-horizontal' size={25} color={colors.white} />
+                </TouchableOpacity>
+            </View>
+        </TouchableWithoutFeedback>
     );
 }
 
