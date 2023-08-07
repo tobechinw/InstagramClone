@@ -16,8 +16,17 @@ const styles = StyleSheet.create({
         marginLeft: 10
     },
     container: {
-        marginTop: 5,
+        marginTop: 10,
         flexDirection: 'row'
+    },
+    username: {
+        fontFamily: 'System',
+        fontSize: 16,
+        marginRight: 10
+    },
+    caption: {
+        fontFamily: 'System',
+        fontSize: 16
     }
 })
 
