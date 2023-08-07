@@ -30,7 +30,7 @@ function PostCard ({ caption, location, source, username, onPress }) {
                     { saved && <MaterialCommunityIcons onPress={() => setSaved(!saved)} name='bookmark' color={colors.white} size={30} /> }
                 </TouchableOpacity>
            </View>
-           <PostText  username={username} caption={caption} />
+           <PostText username={username} caption={caption} />
         </View>
     );
 }
