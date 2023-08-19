@@ -5,14 +5,22 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@aws-sdk/client-s3": "^3.395.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "imports": {
+    "#base/*": "./src/base/*.js",
+    "#posts/*": "./src/posts/*.js",
+    "#search/*": "./src/search/*.js"
   }
 }

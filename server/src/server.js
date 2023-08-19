@@ -2,21 +2,11 @@ const express = require('express')
 
 const app = express()
 const port = process.env.PORT || 5000
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-app.get('/', (request, response) => {
-    response.json({name: 'Tobechi'})
-})
-
-app.get('/colors', (request, response) => {
-    response.json({color: 'Red'})
-})
-
-
-
-
-
-
-
+app.use('/api', require('./routes/index.js'))
 
 
 app.listen(port, () => {
