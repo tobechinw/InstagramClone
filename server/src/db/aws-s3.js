@@ -12,6 +12,12 @@ const s3 = new S3({
     } 
 })
 
+module.exports = {
+    getPosts,
+    getUserPosts,
+    savePost
+}
+
 async function getPosts() {
     const prefix = `users/posts`
     try {
@@ -51,11 +57,4 @@ async function savePost( post, userId ) {
         Bucket: 'instagram-clone-app-tdn-69170',
         Key: key
     })
-}
-
-
-module.exports = {
-    getPosts,
-    getUserPosts,
-    savePost
 }
